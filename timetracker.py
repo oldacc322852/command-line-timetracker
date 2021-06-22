@@ -5,12 +5,9 @@ def write_to_file():
 	with open('timelog.csv', 'a', newline='') as csvfile:
 		csvfile.write(message)
 
-activity = input('What are you going to study? ')
-activity = activity.lower()
+activity = input('What are you going to study? ').lower()
 
-running = input('Do you wish to start the clock (Y/N)? ')
-
-running = running.lower()
+running = input('Do you wish to start the clock (Y/N)? ').lower()
 
 if(running == 'y' or running == 'yes'):
 
